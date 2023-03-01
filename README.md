@@ -1,5 +1,5 @@
 # Stopwatch and Reverse Timer
-- This is a simple web application that includes a stopwatch and a reverse timer. The stopwatch counts up from 00:00:00 and can be started, stopped, and reset. The reverse timer counts down from a specified number of minutes and seconds and can also be started, stopped, and reset.
+This is a simple web application that includes a stopwatch and a reverse timer. The stopwatch counts up from 00:00:00 and can be started, stopped, and reset. The reverse timer counts down from a specified number of minutes and seconds and can also be started, stopped, and reset.
 
 # Technologies Used
 - HTML
