@@ -5,7 +5,7 @@ This is a simple web application that includes a stopwatch and a reverse timer. 
 - HTML
 - CSS (Tailwind CSS)
 - JavaScript
-- Getting Started
+# Getting Started
 - To use the application, simply open the index.html file in your web browser.
 
 # Features
