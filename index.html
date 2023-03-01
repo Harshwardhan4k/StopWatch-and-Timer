@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <div class="flex flex-col items-center mt-10">
+      <h2 class="text-2xl font-bold mb-4">Stopwatch</h2>
+      <div class="bg-white shadow-lg rounded-lg px-6 py-4 flex items-center">
+        <span class="text-4xl font-bold mr-4 stopwatch-time">00:00:00</span>
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded stopwatch-start mr-2"
+        >
+          Start
+        </button>
+        <button
+          class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded stopwatch-stop mr-2"
+        >
+          Stop
+        </button>
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded stopwatch-reset"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center mt-10">
+      <h2 class="text-2xl font-bold mb-4">Reverse Timer</h2>
+      <div class="bg-white shadow-lg rounded-lg px-6 py-4 flex items-center">
+        <span class="text-4xl font-bold mr-4 timer-time">00:00</span>
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded timer-start mr-2"
+        >
+          Start
+        </button>
+        <button
+          class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded timer-stop mr-2"
+        >
+          Stop
+        </button>
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded timer-reset"
+        >
+          Reset
+        </button>
+      </div>
+      <div class="flex items-center mt-4">
+        <label for="timer-input-minutes" class="mr-2">Minutes:</label>
+        <input
+          type="number"
+          id="timer-input-minutes"
+          min="0"
+          max="59"
+          class="py-1 px-2 border border-gray-400 rounded mr-2 w-16"
+        />
+        <label for="timer-input-seconds" class="mr-2">Seconds:</label>
+        <input
+          type="number"
+          id="timer-input-seconds"
+          min="0"
+          max="59"
+          class="py-1 px-2 border border-gray-400 rounded mr-2 w-16"
+        />
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded timer-set"
+        >
+          Set
+        </button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
